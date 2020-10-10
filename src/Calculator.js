@@ -50,22 +50,46 @@ function Calculator(): FunctionComponent {
         <Container>
             <div>
                 <div className={"inputBoxes"}>
-                    <InputBox id={'input_1'} placeHolder={'Input One'} updateValue={event => {
-                        setInputOne(event.target.value);
-                    }}/>
-                    <InputBox id={'input_2'} placeHolder={'Input Two'} updateValue={event => {
-                        setInputTwo(event.target.value);
-                    }}/>
+                    <InputBox
+                        id={'input_1'}
+                        placeHolder={'Input One'}
+                        updateValue={event => {
+                            setInputOne(event.target.value);
+                        }}/>
+                    <InputBox
+                        id={'input_2'}
+                        placeHolder={'Input Two'}
+                        updateValue={event => {
+                            setInputTwo(event.target.value);
+                        }}/>
                 </div>
                 <div className={"functional-buttons"}>
-                    <Button label={"+"} id={'plus'} onClickFun={add}/>
-                    <Button label={"-"} id={'minus'} onClickFun={subtract}/>
-                    <Button label={"x"} id={'multiply'} onClickFun={multiply}/>
-                    <Button label={"/"} id={'divide'} onClickFun={divide}/>
+                    <Button
+                        label={"+"}
+                        id={'plus'}
+                        onClickFun={add}/>
+                    <Button
+                        label={"-"}
+                        id={'minus'}
+                        onClickFun={subtract}/>
+                    <Button
+                        label={"x"}
+                        id={'multiply'}
+                        onClickFun={multiply}/>
+                    <Button
+                        label={"/"}
+                        id={'divide'}
+                        onClickFun={divide}/>
                 </div>
                 <div className={"result"}>
-                    <Button label={"Clear"} id={'clear'} onClickFun={clear}/>
-                    <OutputBox id={'output'} placeHolder={'Output'} output={output}/>
+                    <Button
+                        label={"Clear"}
+                        id={'clear'}
+                        onClickFun={clear}/>
+                    <OutputBox
+                        id={'output'}
+                        placeHolder={'Output'}
+                        output={output}/>
                 </div>
             </div>
         </Container>
