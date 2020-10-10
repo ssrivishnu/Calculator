@@ -1,5 +1,5 @@
 import React, {FunctionComponent, useState} from 'react';
-import './App.css';
+import './Calculator.css';
 import {Container} from "react-bootstrap";
 import {InputBox} from "./Components/InputBox";
 import {Button} from "./Components/Button";
